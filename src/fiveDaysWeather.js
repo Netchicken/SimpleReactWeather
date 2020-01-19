@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { GetForecastDate } from "./tools";
+import Moment from "react-moment";
 import { Card, CardText, CardTitle, CardSubtitle } from "reactstrap";
 import LightSpeed from "react-reveal/LightSpeed"; //https://www.react-reveal.com/examples/common/lightspeed/
 
@@ -29,6 +31,8 @@ class FiveDaysWeather extends Component {
         <div className="row">
           {typeof fiveDayList != "undefined"
             ? fiveDayList.map((item, index) => {
+                const ToDate =GetForecastDate(item.dt_txt);
+
                 return (
                   <LightSpeed left>
                     <div className="col col-md-3 col-sm-6  " key={index}>
@@ -38,13 +42,18 @@ class FiveDaysWeather extends Component {
                           backgroundColor: " rgba(255, 255, 255, 0.2)"
                         }}
                       >
-                        <CardTitle> {item.dt_txt}</CardTitle>
+                        <CardTitle>
+                        
+                          {ToDate} 
+                        </CardTitle>
                         <CardSubtitle>
                           {" "}
                           {" wind speed "}
                           {item.wind.speed}
                         </CardSubtitle>
-                        <CardText className="conditions "></CardText>
+                        <CardText className="conditions ">
+                          {Math.round(item.main.temp)}°c
+                        </CardText>
                       </Card>
                     </div>
                   </LightSpeed>

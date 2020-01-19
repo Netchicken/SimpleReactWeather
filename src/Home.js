@@ -59,8 +59,7 @@ function Home() {
             <div className="weather-box">
               <div className="temp">{Math.round(weather.main.temp)}°c</div>
               <div className="weather">
-                {Math.round(weather.main.temp_min)}°c to 
-                {Math.round(weather.main.temp_max)}°c
+                {Math.round(weather.main.temp_min)}°c     to      {Math.round(weather.main.temp_max)}°c
               </div>
               <div className="weather">{weather.weather[0].main}</div>
               <div className="weather"></div>
