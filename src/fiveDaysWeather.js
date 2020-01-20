@@ -31,7 +31,7 @@ class FiveDaysWeather extends Component {
         <div className="row">
           {typeof fiveDayList != "undefined"
             ? fiveDayList.map((item, index) => {
-                const ToDate =GetForecastDate(item.dt_txt);
+                const ToDate = GetForecastDate(item.dt_txt);
 
                 return (
                   <LightSpeed left>
@@ -42,14 +42,11 @@ class FiveDaysWeather extends Component {
                           backgroundColor: " rgba(255, 255, 255, 0.2)"
                         }}
                       >
-                        <CardTitle>
-                        
-                          {ToDate} 
-                        </CardTitle>
+                        <CardTitle>{ToDate}</CardTitle>
                         <CardSubtitle>
                           {" "}
                           {" wind speed "}
-                          {item.wind.speed}
+                          {item.wind.speed}m/s
                         </CardSubtitle>
                         <CardText className="conditions ">
                           {Math.round(item.main.temp)}°c
