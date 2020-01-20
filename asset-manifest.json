@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SimpleReactWeather/static/css/main.7b9f72f2.chunk.css",
+    "main.js": "/SimpleReactWeather/static/js/main.f5ead026.chunk.js",
+    "main.js.map": "/SimpleReactWeather/static/js/main.f5ead026.chunk.js.map",
+    "runtime-main.js": "/SimpleReactWeather/static/js/runtime-main.746cc517.js",
+    "runtime-main.js.map": "/SimpleReactWeather/static/js/runtime-main.746cc517.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/SimpleReactWeather/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.24a9a711.chunk.js": "/SimpleReactWeather/static/js/2.24a9a711.chunk.js",
+    "static/js/2.24a9a711.chunk.js.map": "/SimpleReactWeather/static/js/2.24a9a711.chunk.js.map",
+    "index.html": "/SimpleReactWeather/index.html",
+    "precache-manifest.1a8cfd52845e4848bcb265382a4bc935.js": "/SimpleReactWeather/precache-manifest.1a8cfd52845e4848bcb265382a4bc935.js",
+    "service-worker.js": "/SimpleReactWeather/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/SimpleReactWeather/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.7b9f72f2.chunk.css.map": "/SimpleReactWeather/static/css/main.7b9f72f2.chunk.css.map",
+    "static/js/2.24a9a711.chunk.js.LICENSE": "/SimpleReactWeather/static/js/2.24a9a711.chunk.js.LICENSE",
+    "static/media/index.css": "/SimpleReactWeather/static/media/warm-bg.635ed87d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.746cc517.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.24a9a711.chunk.js",
+    "static/css/main.7b9f72f2.chunk.css",
+    "static/js/main.f5ead026.chunk.js"
+  ]
+}
