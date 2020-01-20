@@ -4,7 +4,7 @@ import { getCurrentWeather, getFiveDaysWeather } from "./Api";
 import FiveDaysWeather from "./fiveDaysWeather";
 
 function Home() {
-  const [query, setQuery] = useState("Christchurch");
+  const [query, setQuery] = useState("Christchurch,NZ");
   const [weather, setWeather] = useState({});
   const [fiveDays, setFiveDays] = useState({});
 
@@ -51,7 +51,7 @@ function Home() {
         {typeof weather.main != "undefined" ? (
           <div>
             <div className="location-box">
-                          <div className="location">
+              <div className="location">
                 {weather.name}, {weather.sys.country}
               </div>
               <div className="date">{dateBuilderTool(new Date())}</div>
@@ -59,7 +59,8 @@ function Home() {
             <div className="weather-box">
               <div className="temp">{Math.round(weather.main.temp)}°c</div>
               <div className="weather">
-                {Math.round(weather.main.temp_min)}°c     to      {Math.round(weather.main.temp_max)}°c
+                {Math.round(weather.main.temp_min)}°c to{" "}
+                {Math.round(weather.main.temp_max)}°c
               </div>
               <div className="weather">{weather.weather[0].main}</div>
               <div className="weather"></div>

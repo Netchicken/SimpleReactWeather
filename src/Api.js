@@ -1,7 +1,16 @@
-const api = {
-  key: "3f2e5dbaf5cf57927bf90f6b1acf3206",
-  base: "https://api.openweathermap.org/data/2.5/"
+ function This(){
+return "3f2e5dbaf5cf57927bf90f6b1acf3206";
 };
+
+ function That(){
+return "https://api.openweathermap.org/data/2.5/";
+};
+
+const api = {
+  key: This(),
+  base: That()
+};
+
 //current weather
 export function getCurrentWeather(query) {
   return fetch(

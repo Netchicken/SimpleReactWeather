@@ -1,6 +1,3 @@
-import Moment from "react-moment";
-import React from "react";
-
 export function dateBuilderTool(d) {
   let months = [
     "January",
@@ -65,8 +62,11 @@ export function GetForecastDate(date) {
   console.log(dayName);
 
   const hour = newDate.getHours();
+  let amPm = "am";
+  if(hour > 12) {amPm ="pm" }else{ amPm= "am"};
+
   console.log(hour);
 
-  const finalDate = monthName + " " + dayName + " " + hour + " hours";
+  const finalDate = monthName + " " +newDate.getDate() +  " " + dayName + " " + hour + amPm;
   return finalDate;
 }
