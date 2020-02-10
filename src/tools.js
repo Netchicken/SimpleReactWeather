@@ -70,3 +70,17 @@ export function GetForecastDate(date) {
   const finalDate = monthName + " " +newDate.getDate() +  " " + dayName + " " + hour + amPm;
   return finalDate;
 }
+
+export function GroupCards(item) {
+  
+  let temps = [];
+  let wind = [];
+
+
+}
+
+
+
+
+
+
