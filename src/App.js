@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "./Home";
-import FiveDaysWeather from "./fiveDaysWeather";
+import home from "./Home";
+import fiveDaysWeather from "./FiveDaysWeather";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -10,8 +10,8 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/fiveDaysWeather" component={FiveDaysWeather} />
+          <Route exact path="/" component={home} />
+          <Route path="/FiveDaysWeather" component={fiveDaysWeather} />
         </Switch>
       </div>
     );

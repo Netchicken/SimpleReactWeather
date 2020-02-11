@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { GetForecastDate } from "./tools";
+import { GetForecastDate } from "./Tools";
 import { Card, CardText, CardTitle, CardSubtitle } from "reactstrap";
 import LightSpeed from "react-reveal/LightSpeed"; //https://www.react-reveal.com/examples/common/lightspeed/
 
