@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { dateBuilderTool } from "./Tools";
-import { getCurrentWeather, getFiveDaysWeather } from "./Api";
+import { DateBuilderTool } from "./tools";
+import { GetCurrentWeather, GetFiveDaysWeather } from "./Api";
 import FiveDaysWeather from "./fiveDaysWeather";
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      getCurrentWeather(query)
+      GetCurrentWeather(query)
         .then(result => {
           setWeather(result);
           // setQuery("");
@@ -20,7 +20,7 @@ function Home() {
           console.log(err.message);
           return;
         });
-      getFiveDaysWeather(query)
+      GetFiveDaysWeather(query)
         .then(result => {
           setFiveDays(result);
           // setQuery("");
@@ -64,7 +64,7 @@ function Home() {
               <div className="location">
                 {weather.name}, {weather.sys.country}
               </div>
-              <div className="date">{dateBuilderTool(new Date())}</div>
+              <div className="date">{DateBuilderTool(new Date())}</div>
             </div>
             <div className="weather-box">
               <div className="temp">{Math.round(weather.main.temp)}°c</div>

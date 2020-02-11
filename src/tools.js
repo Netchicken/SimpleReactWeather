@@ -1,4 +1,4 @@
-export function dateBuilderTool(d) {
+export function DateBuilderTool(d) {
   let months = [
     "January",
     "February",
@@ -63,24 +63,20 @@ export function GetForecastDate(date) {
 
   const hour = newDate.getHours();
   let amPm = "am";
-  if(hour > 12) {amPm ="pm" }else{ amPm= "am"};
+  if (hour > 12) {
+    amPm = "pm";
+  } else {
+    amPm = "am";
+  }
 
   console.log(hour);
 
-  const finalDate = monthName + " " +newDate.getDate() +  " " + dayName + " " + hour + amPm;
+  const finalDate =
+    monthName + " " + newDate.getDate() + " " + dayName + " " + hour + amPm;
   return finalDate;
 }
 
 export function GroupCards(item) {
-  
   let temps = [];
   let wind = [];
-
-
 }
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { GetForecastDate } from "./Tools";
+import { GetForecastDate } from "./tools";
 import { Card, CardText, CardTitle, CardSubtitle } from "reactstrap";
 import LightSpeed from "react-reveal/LightSpeed"; //https://www.react-reveal.com/examples/common/lightspeed/
 
@@ -10,7 +10,7 @@ import LightSpeed from "react-reveal/LightSpeed"; //https://www.react-reveal.com
 
 //https://openweathermap.org/forecast5#JSON
 
-class fiveDaysWeather extends Component {
+class FiveDaysWeather extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -62,7 +62,7 @@ class fiveDaysWeather extends Component {
   }
 }
 //}
-export default fiveDaysWeather;
+export default FiveDaysWeather;
 // list: Array(40)
 // 0:
 // dt: 1579208400
