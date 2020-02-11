@@ -10,16 +10,26 @@ function Home() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      getCurrentWeather(query).then(result => {
-        setWeather(result);
-        // setQuery("");
-        //    console.log(result);
-      });
-      getFiveDaysWeather(query).then(result => {
-        setFiveDays(result);
-        // setQuery("");
-        //console.log("fivedays",result);
-      });
+      getCurrentWeather(query)
+        .then(result => {
+          setWeather(result);
+          // setQuery("");
+          //    console.log(result);
+        })
+        .catch(err => {
+          console.log(err.message);
+          return;
+        });
+      getFiveDaysWeather(query)
+        .then(result => {
+          setFiveDays(result);
+          // setQuery("");
+          //console.log("fivedays",result);
+        })
+        .catch(err => {
+          console.log(err.message);
+          return;
+        });
     }
   };
 
