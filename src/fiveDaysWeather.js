@@ -10,7 +10,7 @@ import LightSpeed from "react-reveal/LightSpeed"; //https://www.react-reveal.com
 
 //https://openweathermap.org/forecast5#JSON
 
-class FiveDaysWeather extends Component {
+class fiveDaysWeather extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -62,7 +62,7 @@ class FiveDaysWeather extends Component {
   }
 }
 //}
-export default FiveDaysWeather;
+export default fiveDaysWeather;
 // list: Array(40)
 // 0:
 // dt: 1579208400

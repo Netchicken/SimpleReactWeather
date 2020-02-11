@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { dateBuilderTool } from "./Tools";
 import { getCurrentWeather, getFiveDaysWeather } from "./Api";
-import FiveDaysWeather from "./FiveDaysWeather";
+import FiveDaysWeather from "./fiveDaysWeather";
 
 function Home() {
   const [query, setQuery] = useState("Christchurch,NZ");
